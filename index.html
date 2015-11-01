@@ -11,13 +11,13 @@
 		<title>Sharon Kasper</title>
 
 		<!-- Custom styles -->
-		<link href="styles/fed.css" rel="stylesheet" />
+		<link href="styles/science.css" rel="stylesheet" />
 
-
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script> 
-		<script src="js/respond.min.js"></script>   
-		<![endif]-->
+		<script>
+		    // Picture element HTML5 shiv
+		    document.createElement( "picture" );
+		</script>
+		<script src="picturefill.js" async></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     </head>
 
@@ -35,253 +35,256 @@
 
 		<h3>Web</h3>
 		
-		<div class="portfolio-web">
-			<img class="portfolio-thumbnail" alt="JWPlayer" src="images/thumbs/jw_thumb.jpg" />
-			<img class="portfolio-thumbnail" alt="BaubleBar" src="images/thumbs/jw_thumb.jpg" />
-			<img class="portfolio-thumbnail" alt="SR" src="images/thumbs/vs_thumb.jpg" />
+		<div class="portfolio-row">
+			
+			<div class="portfolio-item">
+				<img class="portfolio-thumbnail" alt="JWPlayer" src="images/thumbs/jw_thumb.jpg" />
+				
+				<div class="portfolio-more-content">
 
-			<div class="portfolio-more-content">
+					<div class="portfolio-more-content-jwplayer portfolio-more-content-detail">
+					   <a href=""><img src="/images/jwplayer770x536.jpg" /></a>
 
-				<div class="portfolio-more-content-jwplayer portfolio-more-content-detail">
-				   <a href=""><img src="/images/jwplayer770x536.jpg" /></a>
+					   <h4>JW Player</h4>
+					   <p>Front End Developer</p>
+					   <p>Built out <a href="http://washington.nationals.mlb.com/was/ticketing/natitude.jsp">Natitude</a> marketing campaign to excite relatively new fan base. Includes a rotating background image, photo slideshow, lightbox.</p>
+					   <p>Tools used: HTML5, Less, AngularJS.</p>
+					</div>
+		    	</div>
+		    </div>
+		    <div class="portfolio-item">    
+				<img class="portfolio-thumbnail" alt="Nautica/Kipling" src="images/thumbs/nk_thumb.jpg" />
 
-				   <h4>JW Player</h4>
-				   <p>Front End Developer</p>
-				   <p>Built out <a href="http://washington.nationals.mlb.com/was/ticketing/natitude.jsp">Natitude</a> marketing campaign to excite relatively new fan base. Includes a rotating background image, photo slideshow, lightbox.</p>
-				   <p>Tools used: HTML5, Less, AngularJS.</p>
-				</div>
-	    	</div>
+			    <div class="portfolio-more-content">
+					
+					<div class="more-content-nautica more-content-detail">
+						<!-- wireframe slideshow -->
+		               <a href=""><img src="images/nk770x444.jpg" /></a>
 
-			<div class="portfolio-more-content">
-
-				<div class="more-content-baublebar more-content-detail">
-				   <a href="http://washington.nationals.mlb.com/was/ticketing/natitude.jsp"><img src="/images/natitude770x536.jpg" /></a>
-
-				   <h4>InRhythm</h4>
-				   <p>Front End Developer</p>
-				   <p>Built a styleguide and pattern library for BaubleBar, a jewelry ecommerce site. Converted a static desktop site to responsive using Foundation.</p>
-				   <p>Tools used: HTML5, Sass, jQuery.</p>
-				</div>
-	    	</div>
-	          
-	        <div class="portfolio-more-content">
-	            
-		        <div class="more-content-sr more-content-detail">
-	               <a href=""><img src="/images/sr770x536.jpg" /></a>
-	
-	               <h4>Sports Recruits</h4>
-	               <p>Front End Developer</p>
-	               <p>Built front end for site features and apps using Less, Sass, jQuery and Bootstrap. Built SR custom Sass library on top of Bootstrap for faster prototyping and development.</p>
-	               <p>Tools used: HTML5, Sass, Less, jQuery.</p>
-		        </div>
+		               <h4>Retain Science</h4>
+		               <p>Designer</p>
+		               <p>Designed dashboard for app designed to help companies retain talent.</p>
+		               <p>Tool used: Sketch.</p>
+		         	</div>
+			    </div>
 		    </div>
 
-	            
+		    <div class="portfolio-item">
+				<img class="portfolio-thumbnail" alt="BaubleBar" src="images/thumbs/bb_thumb.jpg" />
+
+				<div class="portfolio-more-content">
+
+					<div class="more-content-baublebar more-content-detail">
+					   <a href="http://washington.nationals.mlb.com/was/ticketing/natitude.jsp"><img src="/images/natitude770x536.jpg" /></a>
+
+					   <h4>InRhythm</h4>
+					   <p>Front End Developer</p>
+					   <p>Built a styleguide and pattern library for BaubleBar, a jewelry ecommerce site. Converted a static desktop site to responsive using Foundation.</p>
+					   <p>Tools used: HTML5, Sass, jQuery.</p>
+					</div>
+		    	</div>
+		    </div>
 		    
-		    <div class="portfolio-more-content">
-				
-				<div class="more-content-nautica more-content-detail">
-	               <a href=""><img src="images/nk770x444.jpg" /></a>
+		</div>
+		<div class="portfolio-row"> 
+			<div class="portfolio-item">
+				<img class="portfolio-thumbnail" alt="SR" src="images/thumbs/vs_thumb.jpg" />
+		          
+		        <div class="portfolio-more-content">
+		            
+			        <div class="more-content-sr more-content-detail">
+		               <a href=""><img src="/images/sr770x536.jpg" /></a>
+		
+		               <h4>Sports Recruits</h4>
+		               <p>Front End Developer</p>
+		               <p>Built front end for site features and apps using Less, Sass, jQuery and Bootstrap. Built SR custom Sass library on top of Bootstrap for faster prototyping and development.</p>
+		               <p>Tools used: HTML5, Sass, Less, jQuery.</p>
+			        </div>
+			    </div>
+			</div>           
+			
+		    <div class="portfolio-item"> 
+				<img class="portfolio-thumbnail" alt="Victoria's Secret" src="images/thumbs/vs_thumb.jpg" />
 
-	               <h4>Nautica</h4>
-	               <p>Front End Developer</p>
-	               <p>Refactored markup and styles for a Nautica and Kipling site relaunch.</p>
-	               <p>Tools used: HTML5, CSS, Demandware.</p>
-	         	</div>
-		    </div>
-	     
+			    <div class="portfolio-more-content">
+					
+					<div class="more-content-vs more-content-detail">
+		               <a href="http://www.victoriassecret.com/"><img src="images/vs770x444.jpg" /></a>
 
-		    <div class="portfolio-more-content">
-				
-				<div class="more-content-vs more-content-detail">
-	               <a href="http://www.victoriassecret.com/"><img src="images/vs770x444.jpg" /></a>
+		               <h4>Victoria's Secret</h4>
+		               <p>Front End Developer</p>
+		               <p>Refactored Product More Info Overlays on <a href="http://www.victoriassecret.com/">Victoria's Secret</a> website. View by selecting any product and clicking on link below sales copy.</p>
+		               <p>Tools used: SASS, HTML5, SVN, Photoshop.</p>
+		         	</div>
+			    </div>
+			</div>
 
-	               <h4>Victoria's Secret</h4>
-	               <p>Front End Developer</p>
-	               <p>Refactored Product More Info Overlays.</p>
-	               <p>Live version: <a href="http://www.victoriassecret.com/">Victoria's Secret</a> website. View by selecting any product and clicking on link below sales copy.</p>
-	               <p>Tools used: SASS, HTML5, PHP, SVN, Photoshop.</p>
-	         	</div>
-		    </div>
+		    <div class="portfolio-item"> 
+				<img class="portfolio-thumbnail" alt="EDF" src="images/thumbs/edf_thumb.jpg" />
 
-		    <div class="portfolio-more-content">
-	         <div class="more-content-edf more-content-detail">
-	               
-	               <div id="carousel-pbo" class="carousel slide">
-	                 <!-- Indicators -->
-	                  <ol class="carousel-indicators">
-	                     <li data-target="#carousel-pbo" data-slide-to="0" class="active"></li>
-	                     <li data-target="#carousel-pbo" data-slide-to="1"></li>
-	                  </ol>
+			    <div class="portfolio-more-content">
+		         	<div class="more-content-edf more-content-detail">
+		               
+		               <div id="carousel-pbo" class="carousel slide">
+		                 <!-- Indicators -->
+		                  <ol class="carousel-indicators">
+		                     <li data-target="#carousel-pbo" data-slide-to="0" class="active"></li>
+		                     <li data-target="#carousel-pbo" data-slide-to="1"></li>
+		                  </ol>
 
-	                 <!-- Wrapper for slides -->
-	                  <div class="carousel-inner">
-	                     <div class="item active">
-	                        <img src="/images/pbo_wireframe770x840.gif"  alt="Polar Bear Odyssey Wireframe" />
-	                     </div>
-	                     <div class="item">
-	                        <img src="/images/polar-bear770x553.jpg" alt="Polar Bear Odyssey" />
-	                     </div>
-	                  </div>
-	                   <!-- Controls -->
-	                    <a class="left carousel-control" href="#carousel-pbo" data-slide="prev">
-	                      <span class="icon-prev"></span>
-	                    </a>
-	                    <a class="right carousel-control" href="#carousel-pbo" data-slide="next">
-	                      <span class="icon-next"></span>
-	                    </a>
-	               </div>
+		                 <!-- Wrapper for slides -->
+		                  <div class="carousel-inner">
+		                     <div class="item active">
+		                        <img src="/images/pbo_wireframe770x840.gif"  alt="Polar Bear Odyssey Wireframe" />
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/polar-bear770x553.jpg" alt="Polar Bear Odyssey" />
+		                     </div>
+		                  </div>
+		                   <!-- Controls -->
+		                    <a class="left carousel-control" href="#carousel-pbo" data-slide="prev">
+		                      <span class="icon-prev"></span>
+		                    </a>
+		                    <a class="right carousel-control" href="#carousel-pbo" data-slide="next">
+		                      <span class="icon-next"></span>
+		                    </a>
+		               </div>
 
-	            </div>
-	            <div>
-	               <h4>Environmental Defense Fund</h4>
-	               <p>Web and Video Producer</p>
-	               <p>Designed and built out Polar Bear Odyssey minisite for EDF membership engagement campaign.</p>
-	               <p>Tools used: HTML, CSS, Photoshop.</p>
-	            </div>
-	         </div>
-	      </div>
-        </div>
-      
+		            </div>
+		            <div>
+		               <h4>Environmental Defense Fund</h4>
+		               <p>Web and Video Producer</p>
+		               <p>Designed and built out Polar Bear Odyssey minisite for EDF membership engagement campaign.</p>
+		               <p>Tools used: HTML, CSS, Photoshop.</p>
+		            </div>
+		        </div>
+	        </div>
+	    </div>
 
-        <div id="design">
+        <div class="portfolio-row" id="design">
             <h3>Graphic Design</h3>
-            <div>
-               <img class="thumbnail" src="/images/thumbs/book_design_thumb.jpg" alt="" />
-            </div>
 
-            <div>
-               <img class="thumbnail" src="/images/thumbs/scary_slideshow_thumb.png" alt="" /> 
-            </div>
+	        <div class="portfolio-item">
+	            <img class="portfolio-thumbnail" src="/images/thumbs/book_design_thumb.jpg" alt="Rebecca book cover" />
+	            <div class="portfolio-more-content">
+	            	<div class="more-content-book more-content-detail">
+		               <img src="/images/book-design.jpg" />
+		               <h4>Rebecca book cover</h4>
+		               <p>Personal project. My version for a favorite novel.</p>
+		            </div>
+	            </div>   
+	        </div>
 
-            <div>
-               <img class="thumbnail" src="/images/thumbs/figures_thumb.gif" alt="" />
-            </div>
-         </div>
+         	<div class="portfolio-item">
+         		<img class="thumbnail" src="/images/thumbs/scary_slideshow_thumb.png" alt="" /> 
+         		<div class="portfolio-more-content">
+	            	<div class="more-content-scary more-content-detail">
+		                <div id="carousel-scary" class="carousel slide">
+		                 <!-- Indicators -->
+		                  <ol class="carousel-indicators">
+		                     <li data-target="#carousel-scary" data-slide-to="0" class="active"></li>
+		                     <li data-target="#carousel-scary" data-slide-to="1"></li>
+		                     <li data-target="#carousel-scary" data-slide-to="2"></li>
+		                     <li data-target="#carousel-scary" data-slide-to="3"></li>
+		                     <li data-target="#carousel-scary" data-slide-to="4"></li>
+		                     <li data-target="#carousel-scary" data-slide-to="5"></li>
+		                     <li data-target="#carousel-scary" data-slide-to="6"></li>
+		                  </ol>
 
-         <div class"detailReb">
-               <img src="/images/book-design.jpg" />
-               <h4>Rebecca book cover</h4>
-               <p>Personal project. My version for a favorite novel.</p>
-         </div>
+		                 <!-- Wrapper for slides -->
+		                  <div class="carousel-inner">
+		                     <div class="item active">
+		                        <img src="/images/astroturf.png" alt="">
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/lobbyist.png" alt="">
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/palin.png" alt="">
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/rush.png" alt="">
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/inhofe.png" alt="">
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/oilmen.png" alt="">
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/beck.png" alt="">
+		                     </div>
+		                  </div>
+						</div> 
+						<div>
+			               <h4>Scariest Climate Opponents</h4>
+			               <p>Part of a slideshow for a EDF fundraising campaign lampooning opponents of action on climate change.</p>        
+			            </div>    
+					</div>
+                </div>
+    	    </div>
 
-         <div class="detailScary">
-               <div id="carousel-scary" class="carousel slide">
-                 <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                     <li data-target="#carousel-scary" data-slide-to="0" class="active"></li>
-                     <li data-target="#carousel-scary" data-slide-to="1"></li>
-                     <li data-target="#carousel-scary" data-slide-to="2"></li>
-                     <li data-target="#carousel-scary" data-slide-to="3"></li>
-                     <li data-target="#carousel-scary" data-slide-to="4"></li>
-                     <li data-target="#carousel-scary" data-slide-to="5"></li>
-                     <li data-target="#carousel-scary" data-slide-to="6"></li>
-                  </ol>
+         	<div class="portfolio-item">
+            	<img class="thumbnail" src="/images/thumbs/figures_thumb.gif" alt="" />
+            	<div class="portfolio-more-content">
+	            	<div class="more-content-figures more-content-detail">
+		                <div id="carousel-brain" class="carousel slide">
+		                 <!-- Indicators -->
+		                  <ol class="carousel-indicators">
+		                     <li data-target="#carousel-brain" data-slide-to="0" class="active"></li>
+		                     <li data-target="#carousel-brain" data-slide-to="1"></li>
+		                  </ol>
 
-                 <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                     <div class="item active">
-                        <img src="/images/astroturf.png" alt="">
-                     </div>
-                     <div class="item">
-                        <img src="/images/lobbyist.png" alt="">
-                     </div>
-                     <div class="item">
-                        <img src="/images/palin.png" alt="">
-                     </div>
-                     <div class="item">
-                        <img src="/images/rush.png" alt="">
-                     </div>
-                     <div class="item">
-                        <img src="/images/inhofe.png" alt="">
-                     </div>
-                     <div class="item">
-                        <img src="/images/oilmen.png" alt="">
-                     </div>
-                     <div class="item">
-                        <img src="/images/beck.png" alt="">
-                     </div>
-                  </div>
-
-                 <!-- Controls 
-                    <a class="left carousel-control" href="#carousel-scary" data-slide="prev">
-                      <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-scary" data-slide="next">
-                      <span class="icon-next"></span>
-                    </a>        -->        
-               </div>
-            </div>
-            <div>
-               <h4>Scariest Climate Opponents</h4>
-               <p>Part of a slideshow for a EDF fundraising campaign lampooning opponents of action on climate change.</p>        
-            </div>
-         </div>
-
-         <div class="detailBrain">
-               
-               <div id="carousel-brain" class="carousel slide">
-                 <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                     <li data-target="#carousel-brain" data-slide-to="0" class="active"></li>
-                     <li data-target="#carousel-brain" data-slide-to="1"></li>
-                  </ol>
-
-                 <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                     <div class="item active">
-                        <img src="/images/brain.jpg"  alt="" />
-                     </div>
-                     <div class="item">
-                        <img src="/images/waxwings.jpg" alt="" />
-                     </div>
-                  </div>
-                   <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-brain" data-slide="prev">
-                      <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-brain" data-slide="next">
-                      <span class="icon-next"></span>
-                    </a>
-               </div>
-
-            </div>
-
-               <h4>Found Textbook Illustrations</h4>
-               <p>Personal project. It's art, yo.</p>
-            </div>
-         </div>
-      </div>
+		                 <!-- Wrapper for slides -->
+		                  <div class="carousel-inner">
+		                     <div class="item active">
+		                        <img src="/images/brain.jpg"  alt="" />
+		                     </div>
+		                     <div class="item">
+		                        <img src="/images/waxwings.jpg" alt="" />
+		                     </div>
+		                  </div>
+		                   <!-- Controls -->
+		                    <a class="left carousel-control" href="#carousel-brain" data-slide="prev">
+		                      <span class="icon-prev"></span>
+		                    </a>
+		                    <a class="right carousel-control" href="#carousel-brain" data-slide="next">
+		                      <span class="icon-next"></span>
+		                    </a>
+		               	</div>
+		               	<h4>Found Textbook Illustrations</h4>
+               			<p>Personal project. It's art, yo.</p>
+		            </div>
+		        </div>
+            </div>               
+        </div>
 
     </div><!-- /.container -->
 
 	<!-- FOOTER -->
 	<footer>
 
-				<p>Let's Connect</p>
-				<ul class="clearfix">
-	        <li class="col-lg-2"><a href="http://www.linkedin.com/in/sharonkasper/"><i class="icon-linkedin"></i></a></li>
+		<h3>Let's Connect</h3>
+		<ul class="">
+	        <li class=""><a href="http://www.linkedin.com/in/sharonkasper/"><i class="icon-linkedin"></i></a></li>
 
-	        <li class="col-lg-2"><a href="https://github.com/kasperific"><i class="icon-github"></i></a></li>
+	        <li class=""><a href="https://github.com/kasperific"><i class="icon-github"></i></a></li>
 
-	        <li class="col-lg-2"><a href="https://twitter.com/kasperific"><i class="icon-twitter"></i></a></li>
+	        <li class=""><a href="https://twitter.com/kasperific"><i class="icon-twitter"></i></a></li>
 						
-	        <li class="col-lg-2"><a href="http://pinterest.com/kasperific"><i class="icon-pinterest"></i></a></li>
-
-					<li class="col-lg-2"><a href="http://www.facebook.com/sharonkasper"><i class="icon-facebook"></i></a></li>
-
-	        <li class="col-lg-2"><a href="https://plus.google.com/u/0/113425103731162753295/"><i class="icon-google-plus"></i></a></li>
-				</ul>
-	     <p><small>&copy; Sharon Kasper, 2013</small></p>
+		</ul>
+	     <p><small>&copy; Sharon Kasper, 
+	     <script type="text/javascript">
+		  document.write(new Date().getFullYear());
+		 </script></small></p>
 
 
 	  <h3>Acknowledgements</h3>
 
 	     <p>This site is brought to you by:</p>
 	     <ul>
-	        <li><a href="https://code.google.com/p/html5shiv/">HTML5shiv</a></li>
-	        <li><a href="https://github.com/scottjehl/Respond">Respond.js</a></li>
-	        <li><a href="http://sass-lang.com/tutorial.html">Sass</a></li>
+	        <li><a href="https://scottjehl.github.io/picturefill/">Picturefill</a></li>
+	        <li><a href="http://sass-lang.com/">Sass</a></li>
 	        <li><a href="http://avexdesigns.com/responsive-youtube-embed/">Responsive YouTube Embed</a></li>
 	     <ul>   
 
