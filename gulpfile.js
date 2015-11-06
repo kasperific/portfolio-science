@@ -1,28 +1,23 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var mqpacker = require('css-mqpacker');
-var csswring = require('csswring');
-var nested = require('postcss-nested');
-var scss = require('postcss-scss');
-
-gulp.task('default', function() {
-	var processors = [nested];
-    return gulp.src('in.css')
-        .pipe(postcss(processors, {syntax: scss}))
-        .pipe(gulp.dest('out'));
-});
+//var csswring = require('csswring');
+var precss = require('precss');
 
 
 gulp.task('css', function () {
     var processors = [
-        autoprefixer({browsers: ['last 1 version']}),
-        mqpacker,
-        csswring
+        autoprefixer({browsers: ['last 2 versions']}),
+        precss
+        //csswring
     ];
-    return gulp.src('./src/*.css')
-	    .pipe(sourcemaps.init())
+    return gulp.src('./src/**/*.css')
 	    .pipe(postcss(processors))
-	    .pipe(sourcemaps.write('.'))
 	    .pipe(gulp.dest('./dest'));
 });
+
+gulp.task('watch', function () {
+	gulp.watch('./src/**/*.css', ['css']);
+});
+
+gulp.task('default', ['watch']);

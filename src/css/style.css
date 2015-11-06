@@ -1,0 +1,17 @@
+/* Testing autoprefixer */
+ 
+.autoprefixer {
+  display: flex;
+}
+ 
+ 
+/* Testing precss */
+ 
+.precss {
+  @if 3 < 5 {
+    background: red;
+  }
+  @else {
+    background: blue;
+  }
+}
