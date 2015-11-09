@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 //var csswring = require('csswring');
-var precss = require('precss');
+var precss = require('precss')({ bubble: ['portfolio'] });
 
 
 gulp.task('css', function () {

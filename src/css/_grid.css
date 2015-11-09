@@ -1,0 +1,28 @@
+@define-mixin row {
+  font-size: 0;
+  width: 1160px;
+  margin: auto;
+}
+
+@define-mixin col $col, $sum, $gap: 1em, $align: top, $first: false, $last: false {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+	@if $first == true {
+		padding-left: 0;
+	} @else {
+		padding-left: $gap;
+	}
+	@if $last == true {
+		padding-right: 0;
+	} @else {
+		padding-right: $gap;
+	}
+
+  @media only screen and (min-width: 768px) {
+    width: calc($col / $sum * 100%);
+    vertical-align: $align;
+  }
+
+  &.fluid { width: calc($col / $sum * 100%); }
+}
