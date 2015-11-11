@@ -5,6 +5,31 @@
 @import 'normalize';
 @import 'grid';
 
+body {
+	font-family: 'Voltaire', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+h1 {
+	font-size: 6.854em;
+}
+
+h2 {
+	font-size: 4.236em;
+}
+
+
+header {
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	background: url(../images/Quintic-med.png) no-repeat fixed 0 50%;
+  	background-size: cover;
+  	height: 100vh;
+}
+
+
 .portfolio-row {
 	@mixin row;
     margin: auto;
@@ -29,14 +54,14 @@
 	right: 0;
 	height: 500px;
 	overflow: hidden;
-	transition: height .7s ease-in-out;
+	transition: height .9s ease-in-out;
 }
 
 .portfolio-drawer-detail {
 	display: flex;
 	padding: 20px 10px;
 	opacity: 1;
-	transition: opacity .4s  ease-in-out;
+	transition: opacity 1s  ease-in-out;
 }
 
 .portfolio-drawer-detail-image,

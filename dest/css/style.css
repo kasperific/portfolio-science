@@ -423,6 +423,37 @@ td, th {
 	padding: 0;
 }
 
+body {
+	font-family: 'Voltaire', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+h1 {
+	font-size: 6.854em;
+}
+
+h2 {
+	font-size: 4.236em;
+}
+
+
+header {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center; 
+	-webkit-justify-content: center; 
+	    -ms-flex-pack: center; 
+	        justify-content: center;
+	background: url(../images/Quintic-med.png) no-repeat fixed 0 50%;
+  	background-size: cover;
+  	height: 100vh;
+}
+
+
 .portfolio-row {
 	font-size: 0;
 	width: 1160px;
@@ -465,7 +496,7 @@ td, th {
 	right: 0;
 	height: 500px;
 	overflow: hidden;
-	transition: height .7s ease-in-out;
+	transition: height .9s ease-in-out;
 }
 
 .portfolio-drawer-detail {
@@ -474,7 +505,7 @@ td, th {
 	display: flex;
 	padding: 20px 10px;
 	opacity: 1;
-	transition: opacity .4s  ease-in-out;
+	transition: opacity 1s  ease-in-out;
 }
 
 .portfolio-drawer-detail-image, .portfolio-drawer-detail-content {
