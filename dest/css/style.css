@@ -437,7 +437,6 @@ h2 {
 	font-size: 4.236em;
 }
 
-
 header {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -451,7 +450,20 @@ header {
 	background: url(../images/Quintic-med.png) no-repeat fixed 0 50%;
   	background-size: cover;
   	height: 100vh;
+	font-family: 'Voltaire', Helvetica, sans-serif;
 }
+
+header:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: radial-gradient(circle, transparent 50%, black 150%);
+	background-attachment: fixed;
+}
+
 
 
 .portfolio-row {
