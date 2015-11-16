@@ -1,14 +1,22 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var precss = require('precss');
 //var csswring = require('csswring');
-var precss = require('precss')({ bubble: ['portfolio'] });
+var lost = require('lost');
+var bem = require('postcss-bem');
+var verticalRhythm = require('postcss-vertical-rhythm');
+var modularScale = require('postcss-modular-scale');
 
 
 gulp.task('css', function () {
     var processors = [
-        autoprefixer({browsers: ['last 2 versions']}),
-        precss
+        precss,
+        lost,
+        bem({style: 'bem'}),
+        verticalRhythm,
+        modularScale,
+        autoprefixer({browsers: ['last 2 versions']})
         //csswring
     ];
     return gulp.src('./src/**/*.css')

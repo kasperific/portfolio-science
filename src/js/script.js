@@ -5,13 +5,19 @@ $( document ).ready(function() {
 	var pushIt = $(this).parent().parent().next('.push-it');
 
 	drawerContent.toggleClass('hide');
-	pushIt.toggleClass('push-it-real-good');
+
+	if (window.innerWidth >= 768) {
+		pushIt.toggleClass('push-it-real-good');
+	}
 
 	if (!drawerContent.hasClass('hide')) { // if open
 		$('.portfolio-drawer').addClass('hide'); // hide all others
 		drawerContent.removeClass('hide');
-		$('.push-it').removeClass('push-it-real-good');
-		pushIt.addClass('push-it-real-good');
+		
+		if (window.innerWidth >= 768) {
+			$('.push-it').removeClass('push-it-real-good');
+			pushIt.addClass('push-it-real-good');
+		}
     };
   }); 
 });

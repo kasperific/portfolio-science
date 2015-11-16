@@ -1,0 +1,42 @@
+header {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center; 
+	-webkit-justify-content: center; 
+	    -ms-flex-pack: center; 
+	        justify-content: center;
+	background: url(../images/Quintic-med.png) no-repeat fixed 30% -340%;
+  	height: 40vh;
+}
+
+header:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: radial-gradient(circle, transparent 50%, $base-color 150%);
+	background-attachment: fixed;
+	box-shadow: inset 0px -10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.header-content {
+	margin: 0 30px;
+}
+
+@media ( min-width: 48.0625rem ) {
+
+	header {
+		height: 100vh;
+	  	background-size: cover;
+	}
+
+	header:after {
+		background-position: 0 50%;
+	}
+}

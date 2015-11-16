@@ -1,0 +1,44 @@
+/* // Breakpoints!
+
+  // From http://www.sitepoint.com/managing-responsive-breakpoints-sass/
+   
+   // 30rem = 480px
+   // 48rem = 768px
+   // 80rem = 1024px
+
+$breakpoints: (
+	'small'  : ( max-width:  30rem ), 
+	'medium'  : ( min-width:  30.0625rem),
+	'handheld' : (max-width: 48rem),
+	'large' : ( min-width: 48.0625rem),
+	'x-large'  : ( min-width: 80rem )
+);
+
+@mixin breakpoints($name) {
+	// If the key exists in the map
+	@if map-has-key($breakpoints, $name) {
+	// Prints a media query based on the value
+		@media #{inspect(map-get($breakpoints, $name))} {
+			@content;
+		}
+	}
+
+	@else if $name == "medium-only" {
+		@media (min-width:  30.0625rem) and (max-width: 48rem) {
+			@content;
+		}
+	}
+
+	@else if $name == "iPhone5landscape" {  
+		@media (min-width: 568px) and (max-width: 666px) {
+     		@content;
+  		}
+	}
+	// If the key doesn't exist in the map
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+		+ "Please make sure it is defined in `$breakpoints` map.";
+	}
+}
+
+ */

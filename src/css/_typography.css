@@ -1,0 +1,64 @@
+
+body {
+	color: $dark-base-color;
+	font: 1rem/1.64 'Maven Pro', Arial, sans-serif;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 1px;
+
+}
+
+h1 {
+	font-size: ms(2)rem;
+}
+
+h2, h3, h4 {
+	font-size: ms(1)rem;
+} 
+
+h4 {
+	
+	margin-bottom: .5vr;
+}
+
+a {
+	color: $light-link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+footer a {
+	color: $dark-link-color;
+}
+
+@media ( min-width: 48.0625rem ) {
+	body {
+		text-align: left;
+	}
+
+	h1 {
+		font-size: ms(4)rem;
+		line-height: 4vr;
+	}
+
+	h2 {
+		font-size: ms(3)rem;
+		line-height: 3vr;
+	}
+
+}
