@@ -1,11 +1,13 @@
 .list-unstyled {
 	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 
 .push-it {
 	transition: margin-top .9s ease-in-out;
 }
+
 .push-it-real-good {
 	margin-top: 500px;
 }

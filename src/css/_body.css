@@ -1,13 +1,17 @@
-
+body {
+	background-color: $light-base-color;
+}
 
 .portfolio-row {
 	lost-center: 100vw;
 	margin-bottom: 1vr;
 
+
 	&:first-of-type {
 		margin-top: 1vr;
 	}
 }
+
 
 .portfolio-item {
 	lost-row: 1/3;
@@ -17,10 +21,22 @@
 .portfolio-thumbnail {
 	display: inline-block;
 	cursor: pointer;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #E9F0F5;
+	border:1px solid #E9F0F5;
+	border-top-color: $light-base-color;
+	box-shadow: inset 0 1px 0 0 $light-base-color,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2,0 2px 4px 0 #f2f2f2;
+
+	&:hover,
+	&:active {
+		background-color: #F4F7FA;
+		border:1px solid #BED1E0;
+	}
 }
 
 .portfolio-drawer {
-	background-color: $dark-base-color;
+	background-color: $darker-base-color;
 	height: 550px;
 	overflow: hidden;
 	transition: height .9s ease-in-out;
@@ -46,7 +62,11 @@
 @media ( min-width: 48.0625rem ) {
 
 	.portfolio-row {
-		lost-center: 90vw;
+		lost-center: 80vw;
+
+		&:first-of-type {
+			margin-top: 2vr;
+		}
 	}
 
 	.portfolio-item-header {
@@ -73,4 +93,31 @@
 	.portfolio-drawer-detail-content {
 		lost-column: 1/2;
 	}
+}
+
+.social-row {
+	padding: 1vr 0;
+	background-color: $base-color;
+}
+
+.social-list {
+	display: inline;
+	margin-right: 1vr;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	a {
+		fill: $dark-base-color;
+
+		&:hover{
+			fill: $darker-base-color;
+		}
+	}
+}
+
+.icon {
+	width: 2em;
+	height: 2em;
 }

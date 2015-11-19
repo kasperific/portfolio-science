@@ -1,5 +1,1 @@
-
-footer {
-	background-color: $base-color;
-	padding: 30px;
-}
+footer{background-color:$dark-base-color;padding:30px;color:$light-base-color}

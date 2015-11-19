@@ -1,5 +1,6 @@
 
 footer {
-	background-color: $base-color;
+	background-color: $dark-base-color;
 	padding: 30px;
+	color: $light-base-color;
 }

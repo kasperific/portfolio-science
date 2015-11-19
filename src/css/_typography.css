@@ -1,6 +1,6 @@
 
 body {
-	color: $dark-base-color;
+	color: $darker-base-color;
 	font: 1rem/1.64 'Maven Pro', Arial, sans-serif;
 	text-align: center;
 }
@@ -35,6 +35,8 @@ h4 {
 a {
 	color: $light-link-color;
 	text-decoration: none;
+	transition-property: color, fill;
+	transition-duration: .5s;
 
 	&:hover,
 	&:focus {
@@ -42,14 +44,8 @@ a {
 	}
 }
 
-footer a {
-	color: $dark-link-color;
-}
 
 @media ( min-width: 48.0625rem ) {
-	body {
-		text-align: left;
-	}
 
 	h1 {
 		font-size: ms(4)rem;
@@ -60,5 +56,8 @@ footer a {
 		font-size: ms(3)rem;
 		line-height: 3vr;
 	}
-
+	
+	h3 {
+		line-height: 1.2vr;
+	}
 }

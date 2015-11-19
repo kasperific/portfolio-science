@@ -1,9 +1,18 @@
+/* Lost Variables */
+
 @lost flexbox flex;
 @lost gutter 26px;
+
+/* Color Variables */
+
 $base-color: rgb(169,194,214);
 $light-base-color: rgb(244, 247, 250);
-$dark-base-color: rgb(21, 24, 27);
+$dark-base-color: rgb(85, 97, 107);
+$darker-base-color: rgb(21, 24, 27);
 $light-link-color: rgb(214, 169, 171);
 $dark-link-color: rgb(85, 97, 107);
+
+/* Modular Scale Variables */
+
 $ms-bases: 1.25rem;
 $ms-ratios: 1.618;
