@@ -37,7 +37,7 @@ body {
 
 .portfolio-drawer {
 	background-color: $darker-base-color;
-	height: 550px;
+	height: 660px;
 	overflow: hidden;
 	transition: height .9s ease-in-out;
 }
