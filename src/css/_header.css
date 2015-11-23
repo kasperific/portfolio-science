@@ -3,7 +3,7 @@ header {
 	display: flex;
 	align-items: center; 
 	justify-content: center;
-	background: url(../images/quintic-med.png) no-repeat fixed 30% 0%;
+	background: url(../../images/quintic-med.png) no-repeat fixed 30% 0%;
   	height: 40vh;
 
   	&:after {
@@ -24,12 +24,19 @@ header {
 
 	header {
 		height: 100vh;
-		background: url(../images/quintic-grid.png) no-repeat fixed 40% 80%;
+		background: url(../../images/quintic-grid.png) no-repeat fixed 40% 80%;
 		background-color: #fff;
 	}
 
 	.header-content {
 		text-align: left;
 		width: 80vw;
+	}
+}
+
+@media ( min-width: 80rem ) {
+
+	header {
+		background-image: url(../../images/quintic-grid-2014x1224.png);
 	}
 }

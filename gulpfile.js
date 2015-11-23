@@ -7,6 +7,8 @@ var bem = require('postcss-bem');
 var verticalRhythm = require('postcss-vertical-rhythm');
 var modularScale = require('postcss-modular-scale');
 var csswring = require('csswring');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 gulp.task('css', function () {
     var processors = [
@@ -23,8 +25,16 @@ gulp.task('css', function () {
 	    .pipe(gulp.dest('./dest'));
 });
 
+gulp.task('js', function() {
+  gulp.src('./src/**/*.js')
+    .pipe( concat('output.min.js') ) // concat pulls all our files together before minifying them
+    .pipe(uglify())
+    .pipe(gulp.dest('dest/js'));
+});
+
 gulp.task('watch', function () {
 	gulp.watch('./src/**/*.css', ['css']);
+	gulp.watch('./src/**/*.js', ['js']);
 });
 
 gulp.task('default', ['watch']);
